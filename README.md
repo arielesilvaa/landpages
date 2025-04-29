@@ -1,48 +1,97 @@
-# Astro Starter Kit: Basics
 
-```sh
-npm create astro@latest -- --template basics
-```
+# Landing Page de Segurança Privada
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Este projeto é uma **landing page responsiva** desenvolvida com [Astro](https://astro.build/) e [TailwindCSS](https://tailwindcss.com/), ideal para empresas do ramo de segurança privada.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+![evercapture_29-04-2025_at_14-30-04](https://github.com/user-attachments/assets/576d35d6-7477-4b22-a9bc-02759c4640da)
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+LINK DO PROJERO -> 
+https://landpages-sepia.vercel.app/
 
-## 🚀 Project Structure
+LINK DO CODIGO ->
 
-Inside of your Astro project, you'll see the following folders and files:
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## 🛠️ Tecnologias Utilizadas
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+- [Astro](https://astro.build/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Font Awesome](https://fontawesome.com/) para ícones
+- HTML5 + CSS3 (via Tailwind)
+- Responsividade com Mobile First
 
-## 🧞 Commands
+## 📁 Estrutura de Pastas
 
-All commands are run from the root of the project, from a terminal:
+/public └── imagens/ # Imagens usadas no site (logo, fotos etc.)
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+/src ├── components/ # Componentes reutilizáveis ├── layouts/ # Layout base com <slot /> └── pages/ # Páginas do projeto (index.astro)
 
-## 👀 Want to learn more?
+/styles └── global.css # Estilos globais com diretivas Tailwind
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+tailwind.config.js # Configuração do Tailwind astro.config.mjs # Configuração do Astro postcss.config.js # Configuração do PostCSS
+
+bash
+Copiar
+Editar
+
+## 🚀 Como Executar
+
+1. **Clone o repositório:**
+
+```bash
+git clone https://github.com/seu-usuario/nome-do-repositorio.git
+cd nome-do-repositorio
+Instale as dependências:
+
+bash
+Copiar
+Editar
+npm install
+Execute em modo de desenvolvimento:
+
+bash
+Copiar
+Editar
+npm run dev
+Build para produção:
+
+bash
+Copiar
+Editar
+npm run build
+Pré-visualização do build:
+
+bash
+Copiar
+Editar
+npm run preview
+📷 Screenshots
+(Adicione aqui imagens de preview da landing page)
+
+💡 Funcionalidades
+Design 100% responsivo
+
+Cards com ícones e textos
+
+Formulário de contato funcional
+
+Estrutura modular e escalável
+
+Código pronto para deploy em ambientes como Vercel, Netlify etc.
+
+📄 Licença
+Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+
+yaml
+Copiar
+Editar
+
+---
+
+Se quiser, posso gerar esse `README.md` como arquivo pronto pra você. Deseja isso?
+
+
+
+
+
+
+
