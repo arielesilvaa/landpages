@@ -1,22 +1,288 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+---
+import "../styles/global.css";
+---
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <title>Segurança Privada</title>
+  </head>
+  <body class="font-sans">
+    <!-- Barra preta superior -->
+    <div
+      class="bg-black text-white text-sm px-4 py-1 flex justify-between items-center"
+    >
+      <span>100% confiável</span>
+      <div class="flex space-x-3">
+        <a href="#" class="text-white">
+          <i class="fab fa-facebook"></i>
+          <!-- Ícone do Facebook -->
+        </a>
+        <a href="#" class="text-white">
+          <i class="fab fa-instagram"></i>
+          <!-- Ícone do Instagram -->
+        </a>
+        <a href="#" class="text-white">
+          <i class="fab fa-youtube"></i>
+          <!-- Ícone do YouTube -->
+        </a>
+      </div>
+    </div>
+
+    <!-- Menu principal -->
+    <header class="bg-white shadow px-6 py-4 flex justify-between items-center">
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+		<img src="./public/imagens/logo.jpg" alt="Logo" class="h-16" />
+	  </div>
+      <!-- Navegação -->
+      <nav class="space-x-6 hidden md:flex">
+        <a href="#home" class="text-gray-700 hover:text-black">Home</a>
+        <a href="#sobre" class="text-gray-700 hover:text-black">Nossa História</a>
+        <a href="#servico" class="text-gray-700 hover:text-black">Serviços</a>
+        <a href="#contato" class="text-gray-700 hover:text-black">Contatos</a>
+      </nav>
+
+      <!-- Botão de contato -->
+      <a
+        href="#contato"
+        class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 text-sm">
+        Contato
+      </a>
+    </header>
+
+    <main>
+      <div
+        class="relative bg-cover bg-center h-[500px] bg-image"
+        style="background-image: url('/imagens/seguranca01.jpg');">
+        <!-- Texto e Botão alinhados à esquerda -->
+        <div
+          class="absolute inset-0 flex items-center justify-start text-white p-8"
+        >
+          <!-- Conteúdo alinhado à esquerda -->
+          <div class="max-w-md">
+            <!-- Título -->
+            <h2 class="text-4xl font-bold text-orange-500 mb-4">
+              Segurança Privada
+            </h2>
+            <!-- Descrição -->
+            <p class="text-xl mb-6">
+              Serviço para você e sua empresa, personalizado com sua rotina.
+            </p>
+            <p class="text-lg text-gray-200 mb-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <!-- Botão -->
+            <a
+              href="#contato"
+              class="px-6 py-2 bg-orange-500 text-white rounded-full hover:bg-orange-600"
+              >Solicite seu orçamento</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <section id="home" class="py-16 px-6 bg-white">
+        <div
+          class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10"
+        >
+          <!-- Imagem com borda preta -->
+          <div class="flex-shrink-0">
+            <img
+              src="./imagens/seguranca02.jpg"
+              alt="Descrição da imagem"
+              class="w-[350px] border border-black rounded-md"
+            />
+          </div>
+          <!-- Conteúdo ao lado da imagem -->
+          <div class="flex-1">
+            <!-- Título -->
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+              Segurança personalizada
+            </h2>
+			<div class="w-20 h-1 bg-orange-500 mb-4"></div>
+
+            <!-- Parágrafo -->
+            <p class="text-gray-700 mb-6">
+              Serviço pensado para você e sua empresa. Adaptado à sua rotina,
+              com confiança e agilidade.
+            </p>
+
+            <!-- Pontinhos com textos -->
+            <div class="space-y-4 mb-6">
+              <!-- Item 1 -->
+              <div class="flex items-start space-x-3">
+                <div class="w-3 h-3 bg-orange-500 rounded-full mt-1"></div>
+                <div>
+                  <p class="font-semibold text-gray-800">Monitoramento 24h</p>
+                  <p class="text-sm text-gray-600">
+                    Acompanhamento em tempo real para sua tranquilidade.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="flex items-start space-x-3">
+                <div class="w-3 h-3 bg-orange-500 rounded-full mt-1"></div>
+                <div>
+                  <p class="font-semibold text-gray-800">
+                    Equipe especializada
+                  </p>
+                  <p class="text-sm text-gray-600">
+                    Profissionais treinados e preparados para atender você.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botão -->
+            <a
+              href="#contato"
+              class="inline-block bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition"
+            >
+              Solicite seu orçamento
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre" class="py-10 px-6 bg-white text-center">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Nossos Serviços</h2>
+		
+        <p class="text-gray-600 mb-10 text-sm max-w-xl mx-auto">
+          Conheça as soluções que oferecemos para garantir sua segurança.
+        </p>
+
+        <!-- Grid de ícones -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto"
+        >
+          <!-- Card 1: Escudo -->
+          <div
+            class="bg-black text-white p-6 rounded-md flex flex-col items-center"
+          >
+            <i class="fas fa-shield-alt text-4xl mb-4"></i>
+			<p>Rondas Monitoradas</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, pariatur. Similique explicabo praesentium.</p>
+          </div>
+
+          <!-- Card 2: Mapa -->
+          <div
+            class="bg-black text-white p-6 rounded-md flex flex-col items-center"
+          >
+            <i class="fas fa-map-marker-alt text-4xl mb-4"></i>
+            <p>Rondas Monitoradas</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, pariatur. Similique explicabo praesentium.</p>
+          </div>
+
+          <!-- Card 3: Casa -->
+          <div
+            class="bg-black text-white p-6 rounded-md flex flex-col items-center"
+          >
+            <i class="fas fa-home text-4xl mb-4"></i>
+            <p>Segurança Residencial</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, pariatur. Similique explicabo praesentium.</p>
+          </div>
+
+          <!-- Card 4: Dois bonequinhos -->
+          <div
+            class="bg-black text-white p-6 rounded-md flex flex-col items-center"
+          >
+            <i class="fas fa-users text-4xl mb-4"></i>
+            <p>Equipe Treinada</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, pariatur. Similique explicabo praesentium.</p>
+          </div>
+
+          <!-- Card 5: Casa comercial -->
+          <div
+            class="bg-black text-white p-6 rounded-md flex flex-col items-center"
+          >
+            <i class="fas fa-building text-4xl mb-4"></i>
+            <p>Segurança Comercial</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, pariatur. Similique explicabo praesentium.</p>
+          </div>
+
+          <!-- Card 6: Cofre -->
+          <div
+            class="bg-black text-white p-6 rounded-md flex flex-col items-center"
+          >
+            <i class="fas fa-piggy-bank text-4xl mb-4"></i>
+            <p>Transporte de Valores</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, pariatur. Similique explicabo praesentium.</p>
+          </div>
+        </div>
+      </section>
+
+	  <section id="servico" class="relative py-16 px-6 bg-white overflow-hidden">
+		<!-- Linha decorativa horizontal -->	  
+		<div class="relative z-10 max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+		  <!-- Texto -->
+		  <div class="flex-1 md:pr-8">
+			<h2 class="text-3xl font-bold text-gray-900 mb-4">Nosso Compromisso</h2>
+			<div class="w-20 h-1 bg-orange-500 mb-4"></div>
+			<p class="text-gray-600 mb-6 text-lg">
+			  Nossa missão é oferecer soluções de segurança que garantem a tranquilidade de sua família e seu patrimônio. 
+			  Com equipes treinadas e equipamentos de última geração, proporcionamos o melhor serviço para você.
+			</p>
+			<p class="text-gray-600 text-base">
+			  Confiabilidade, dedicação e inovação estão em nosso DNA. Venha conhecer mais sobre os serviços que temos para você.
+			</p>
+		  </div>
+	  
+		  <!-- Imagem -->
+		  <div class="flex-1">
+			<img src="/imagens/seguranca03.jpg" alt="Imagem de segurança" class="w-full h-auto rounded-lg shadow-lg"/>
+		  </div>
+		</div>
+	  </section>
+	  
+	  <section id="contato" class="py-8 px-6 bg-white-50">
+		<h2 class="text-3xl font-bold text-gray-900 text-center mb-8">Entre em Contato</h2>
+		
+		
+		<!-- Formulário -->
+		<form action="#" method="POST" class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+		  <div class="mb-6">
+			<label for="name" class="block text-lg font-medium text-gray-700 mb-2">Nome</label>
+			<input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
+		  </div>
+	  
+		  <div class="mb-6">
+			<label for="email" class="block text-lg font-medium text-gray-700 mb-2">E-mail</label>
+			<input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
+		  </div>
+	  
+		  <div class="mb-6">
+			<label for="message" class="block text-lg font-medium text-gray-700 mb-2">Mensagem</label>
+			<textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+		  </div>
+	  
+		  <div class="mb-6">
+			<button type="submit" class="w-full py-3 bg-orange-500 text-white text-lg rounded-md hover:bg-orange-800 focus:outline-none focus:ring-2 focus:ring-blue-500">
+			  Enviar
+			</button>
+		  </div>
+		</form>
+	  </section> 
+	  <footer class="bg-gray-900 text-white py-6">
+		<div class="text-center">
+		  <p class="text-sm">&copy; 2025 Todos os direitos reservados. Ariele Silva.</p>
+		  <div class="mt-4">
+			<a href="#" class="text-blue-500 hover:text-blue-700 mx-2">Termos de Uso</a>
+			<a href="#" class="text-blue-500 hover:text-blue-700 mx-2">Política de Privacidade</a>
+		  </div>
+		</div>
+	  </footer> 
+    </main>
+  </body>
+</html>
